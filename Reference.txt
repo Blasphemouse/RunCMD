@@ -1,0 +1,8 @@
+Manual Execution of Registry Requests
+* Registry Key Addition + Note
+    * reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chromeButLonger.exe" /ve /d "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" /f
+    * reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chromeButLonger.exe" /v Note /d "Created By RunCMD" /f
+* Registry Key Query
+    * reg query "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths" /s
+* Registry Key Deletion
+    * reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chromeButLonger.exe" /f
